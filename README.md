@@ -1,6 +1,6 @@
 # dede
 
-A new Flutter project.
+L'application de Dé ("Exercice Dédé").
 
 ## Getting Started
 
