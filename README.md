@@ -1,4 +1,4 @@
-# dede
+# DEDE
 
 L'application de Dé ("Exercice Dédé").
 
