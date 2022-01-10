@@ -29,11 +29,6 @@ class _DiceChangeState extends State<DiceChange> {
   void DiceChange1() {
     setState(() {
       random1 = Random().nextInt(6) + 1;
-    });
-  }
-
-  void DiceChange2() {
-    setState(() {
       random2 = Random().nextInt(6) + 1;
     });
   }
@@ -60,7 +55,7 @@ class _DiceChangeState extends State<DiceChange> {
             child: Padding(
               padding: EdgeInsets.all(16),
               child: FlatButton(
-                onPressed: (DiceChange2),
+                onPressed: (DiceChange1),
                 child: Image.asset(
                   'images/dice$random2.png',
                 ),
