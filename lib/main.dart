@@ -16,6 +16,7 @@ void main() {
 }
 
 class DicePage extends StatelessWidget {
+  int leftDiceNumber = 5;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,7 +27,7 @@ class DicePage extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(16),
               child: Image.asset(
-                'images/dice1.png',
+                'images/dice$leftDiceNumber.png',
               ),
             ),
           ),
@@ -35,7 +36,7 @@ class DicePage extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(16),
               child: Image.asset(
-                'images/dice2.png',
+                'images/dice1.png',
               ),
             ),
           ),
