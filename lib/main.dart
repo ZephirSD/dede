@@ -25,9 +25,16 @@ class DiceChange extends StatefulWidget {
 
 class _DiceChangeState extends State<DiceChange> {
   int random1 = Random().nextInt(6) + 1;
+  int random2 = Random().nextInt(6) + 1;
   void DiceChange1() {
     setState(() {
       random1 = Random().nextInt(6) + 1;
+    });
+  }
+
+  void DiceChange2() {
+    setState(() {
+      random2 = Random().nextInt(6) + 1;
     });
   }
 
@@ -53,11 +60,9 @@ class _DiceChangeState extends State<DiceChange> {
             child: Padding(
               padding: EdgeInsets.all(16),
               child: FlatButton(
-                onPressed: () {
-                  print('Vous avez appuyé sur l\'image de droite');
-                },
+                onPressed: (DiceChange2),
                 child: Image.asset(
-                  'images/dice2.png',
+                  'images/dice$random2.png',
                 ),
               ),
             ),
