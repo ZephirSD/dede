@@ -26,8 +26,13 @@ class DicePage extends StatelessWidget {
             flex: 1,
             child: Padding(
               padding: EdgeInsets.all(16),
-              child: Image.asset(
-                'images/dice$leftDiceNumber.png',
+              child: FlatButton(
+                onPressed: () {
+                  print('Vous avez appuyé sur l\'image de gauche');
+                },
+                child: Image.asset(
+                  'images/dice$leftDiceNumber.png',
+                ),
               ),
             ),
           ),
@@ -35,8 +40,13 @@ class DicePage extends StatelessWidget {
             flex: 1,
             child: Padding(
               padding: EdgeInsets.all(16),
-              child: Image.asset(
-                'images/dice1.png',
+              child: FlatButton(
+                onPressed: () {
+                  print('Vous avez appuyé sur l\'image de droite');
+                },
+                child: Image.asset(
+                  'images/dice2.png',
+                ),
               ),
             ),
           ),
